@@ -109,7 +109,14 @@ fun MainScreen(actionBarFun: topBarFun = { EmptyComposable() }) {
                 }
             }
         ) {
-            padding -> Box( modifier = Modifier.padding(padding))
+            padding ->
+            Box( modifier = Modifier.padding(padding)){
+
+                when (screenItemNumber.intValue) {
+
+                    0 -> TimeZoneScreen(currentTimeZone)
+                }
+            }
         }
     }
 }

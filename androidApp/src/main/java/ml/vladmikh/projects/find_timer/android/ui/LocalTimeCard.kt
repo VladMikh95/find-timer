@@ -63,12 +63,15 @@ fun LocalTimeCard(city :String, time: String, date: String) {
 
                         Text(
                             stringResource(R.string.your_location),
+                            color = Color.White,
                             style = MaterialTheme.typography.bodySmall
                         )
 
                         Spacer(Modifier.height(8.dp))
 
-                        Text(city, style = MaterialTheme.typography.headlineSmall)
+                        Text(city,
+                            color = Color.White,
+                            style = MaterialTheme.typography.headlineSmall)
 
                         Spacer(Modifier.height(8.dp))
                     }
@@ -79,11 +82,15 @@ fun LocalTimeCard(city :String, time: String, date: String) {
 
                         Spacer(modifier = Modifier.weight(1.0f))
 
-                        Text(time, style = MaterialTheme.typography.headlineSmall)
+                        Text(time,
+                            color = Color.White,
+                            style = MaterialTheme.typography.headlineSmall)
 
                         Spacer(Modifier.height(8.dp))
 
-                        Text(date, style = MaterialTheme.typography.bodySmall)
+                        Text(date,
+                            color = Color.White,
+                            style = MaterialTheme.typography.bodySmall)
 
                         Spacer(Modifier.height(8.dp))
                     }
